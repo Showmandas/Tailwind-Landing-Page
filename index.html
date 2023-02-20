@@ -1,15 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tailwind Landing Page</title>
     <!-- tailwind css cdn  -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="mx-auto flex items-center justify-between" style="max-width: 1150px;">
+        <div class="logo">
+            <img src="images/" alt="">
+        </div><!--/logo-->
+        <nav class="flex items-center gap-5">
+            <div><a href="#">Service</a></div>
+            <div><a href="#">Gallery</a></div>
+            <div><a href="#">About Us</a></div>
+            <div><a href="#">Contact Us</a></div>
+        </nav>
+    </header>
+    <section class="py-16 mx-auto" style="max-width: 1150px;">
+      <div class="grid grid-cols-2 items-center h-full">
+        <div>
+          <div style="font-family: 'Rubik Gemstones', cursive" class="text-5xl leading-tight mb-5 text-slate-900">
+            Delicious Cakes for your events
+          </div>
+        <div class="text-lg mb-7 text-slate-900">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus
+          eaque nihil rem minus? Necessitatibus tempora tempore tenetur ad,
+          voluptatum
+        </div>
+        <div class="bg-red-700 text-lg font-semibold inline-block cursor-pointer px-10 py-3 rounded-md text-white">Order now</div>
+    </div>
+    <div class="place-self-center bg-gradient-to-t from-red-300 to-green-50 rounded-md p-5">
+        <img style="height: 440px;" src="images/cakeman.png" alt="cakeman">
+      </div><!--img-->
+      </div><!--/grid-->
+      
+    </section>
+  </body>
 </html>
