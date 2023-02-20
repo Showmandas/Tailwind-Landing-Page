@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page</title>
+      <!-- tailwind css cdn  -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap"
+        rel="stylesheet"
+      />
+      <link rel="stylesheet" href="style.css" />
+    
+</head>
+<body>
+    <header class="py-5 my-3  mx-auto flex items-center justify-between" style="max-width: 1150px;">
+        <div class="logo">
+            <img src="images/logo.jpg" alt="logo cakeman" class="w-20 rounded-full">
+        </div><!--/logo-->
+        <nav class="flex items-center gap-5">
+            <div><a href="#">Service</a></div>
+            <div><a href="#">Gallery</a></div>
+            <div><a href="#">About Us</a></div>
+            <div class="bg-[#EB455F] text-md font-semibold inline-block cursor-pointer px-6 py-1 rounded-md text-white"><a href="#">Contact Us</a></div>
+        </nav>
+    </header>
+    <!--/end header section-->
+    <div class="container max-w-full">
+        <div class="row flex w-full gap-6 px-10 py-20">
+            <div class="flex flex-wrap text-center gap-5 w-8/12">
+                <div class="cakeCard w-56">
+                    <img src="images/cake-1.jfif" alt="cake-1">
+                    <div class="cakeCardBody">
+                        <h5 class="card-txt" id="cakeNameOne">a</h5>
+                        <p>Price: <span>700/-</span></p>
+                        <input type="text" placeholder="Enter Quantity" id="cakeOneQuantity">
+                        <button class="bg-[#EB455F] text-lg font-semibold inline-block cursor-pointer px-6 py-1 rounded-md text-white">Order</button>
+                    </div><!--/cakeCardBody-->
+
+                </div><!--/cakeCard-->
+                <div class="cakeCard w-56">
+                    <img src="images/cake-1.jfif" alt="cake-1">
+                    <div class="cakeCardBody">
+                        <h5 class="card-txt" id="cakeNameTwo">b</h5>
+                        <p>Price: <span>850/-</span></p>
+                        <input type="text" placeholder="Enter Quantity" id="cakeOneQuantity">
+                        <button class="bg-[#EB455F] text-lg font-semibold inline-block cursor-pointer px-6 py-1 rounded-md text-white">Order</button>
+                    </div><!--/cakeCardBody-->
+
+                </div><!--/cakeCard-->
+                <div class="cakeCard w-56">
+                    <img src="images/cake-1.jfif" alt="cake-1">
+                    <div class="cakeCardBody">
+                        <h5 class="card-txt" id="cakeNameThree">c</h5>
+                        <p>Price: <span>1000/-</span></p>
+                        <input type="text" placeholder="Enter Quantity" id="cakeOneQuantity">
+                        <button class="bg-[#EB455F] text-lg font-semibold inline-block cursor-pointer px-6 py-1 rounded-md text-white">Order</button>
+                    </div><!--/cakeCardBody-->
+
+                </div><!--/cakeCard-->
+                <div class="cakeCard w-56">
+                    <img src="images/cake-1.jfif" alt="cake-1">
+                    <div class="cakeCardBody">
+                        <h5 class="card-txt" id="cakeNameFour">d</h5>
+                        <p>Price: <span>1100/-</span></p>
+                        <input type="text" placeholder="Enter Quantity" id="cakeOneQuantity">
+                        <button class="bg-[#EB455F] text-lg font-semibold inline-block cursor-pointer px-6 py-1 rounded-md text-white">Order</button>
+                    </div><!--/cakeCardBody-->
+
+                </div><!--/cakeCard-->
+                <div class="cakeCard w-56">
+                    <img src="images/cake-1.jfif" alt="cake-1">
+                    <div class="cakeCardBody">
+                        <h5 class="card-txt" id="cakeNameFour">d</h5>
+                        <p>Price: <span>1100/-</span></p>
+                        <input type="text" placeholder="Enter Quantity" id="cakeOneQuantity">
+                        <button class="bg-[#EB455F] text-lg font-semibold inline-block cursor-pointer px-6 py-1 rounded-md text-white">Order</button>
+                    </div><!--/cakeCardBody-->
+
+                </div><!--/cakeCard-->
+                <div class="cakeCard w-56">
+                    <img src="images/cake-1.jfif" alt="cake-1">
+                    <div class="cakeCardBody">
+                        <h5 class="card-txt" id="cakeNameFour">d</h5>
+                        <p>Price: <span>1100/-</span></p>
+                        <input type="text" placeholder="Enter Quantity" id="cakeOneQuantity">
+                        <button class="bg-[#EB455F] text-lg font-semibold inline-block cursor-pointer px-6 py-1 rounded-md text-white">Order</button>
+                    </div><!--/cakeCardBody-->
+
+                </div><!--/cakeCard-->
+
+            </div><!--/cards-->
+            <div class="calculation w-4/12">
+                <div> 
+                    <h1>Cake : <span id="cakeName"></span></h1>
+                    <h2>Order : <span id="showQuantity"></span>Cake</h2>
+                    <p>Cost : <span id="cost"></span></p>
+                    <p>Use coupon code for 5% discount</p>
+                    <div>
+                        <input type="text" id="couponCode" placeholder="1010">
+                        <button id="discountBtn" class="bg-[#EB455F] text-lg font-semibold inline-block cursor-pointer px-3 py-1 rounded-md text-white">Get Discount</button>
+                    </div>
+                    <h3>Total Cost : <span id="total"></span></h3>
+                </div>
+            </div><!--/calculation-->
+        </div><!--/row-->
+    </div><!--/container-->
+</body>
+</html>
